@@ -75,11 +75,13 @@
 
 #### 📊 상권 분석 서비스 데이터
 #### 데이터 설명
+```bash
 - 상권배후지_코드를 기준으로 4개의 데이터셋 병합
     - 영역-상권배후지
     - 길단위인구-상권배후지
     - 추정매출-상권배후지
     - 직장인구-상권배후지
+```
 
 #### 데이터 속성 추출
 1️⃣ 영역-상권배후지
@@ -158,22 +160,20 @@
 ```bash
 hdfs dfs -mkdir -p /input
 hdfs dfs -put /data/* /input
-
-
-
+```
 
 #### 업로드 확인
-```http
+```bash
 hdfs dfs -ls /input
 ```
 
 #### 웹에서 확인하기
-```http
+```bash
 http://localhost:9870/explorer.html#
 ```
 
 #### Spark를 활용한 데이터 읽기
-```http
+```bash
 # SparkSession 생성
 spark = SparkSession.builder \
     .appName("HDFS and Local Save Example") \
@@ -185,12 +185,12 @@ df = spark.read.csv(input_path, header=True, inferSchema=True)
 ```
 
 #### spark-submit (실행행)
-```http
+```bash
 spark-submit /home/hadoop/cal.py
 ```
 
 #### output 결과 확인인
-```http
+```bash
 spark-submit /home/hadoop/cal.py
 ```
 
@@ -200,7 +200,7 @@ spark-submit /home/hadoop/cal.py
 
 ## 📊 Random Forest Regression 모델 활용
 
-```http
+```bash
   - 다양한 변수와 복잡한 관계를 효과적으로 다룰 수 있음
   - 비선형적인 관계를 모델링하는 데 유리
   - 입력변수가 나이, 성별, 목적, 지역의 비선형적인 관계이므로 랜덤포레스트가 적합함
