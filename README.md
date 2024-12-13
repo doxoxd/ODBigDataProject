@@ -1,8 +1,7 @@
 
 # 🌟 OD 데이터를 통한 창업 지역 및 분야 추천
+🚀 **창업핑 빅데이터 분석 프로젝트**
 
-<span style="color: red; font-weight: bold;">🌟 OD 데이터를 통한 창업 지역 및 분야 추천</span>
-<span style="color: blue;">창업핑 빅데이터 분석 프로젝트</span>
 
 
 ![Animation](https://drive.google.com/uc?id=1Kz8HM2qSak8u1XIuyqL_uRBhRshZTSrz)
