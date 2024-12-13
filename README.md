@@ -2,8 +2,8 @@
 # 🌟 OD 데이터를 통한 창업 지역 및 분야 추천
 🚀 **창업핑 빅데이터 분석 프로젝트**
 
-🌐 **사이트 바로가기** </br>
-[![site](https://img.shields.io/badge/go-000000?style=for-the-badge&logo=go&logoColor=white)](http://220.68.27.123:2201/)
+🌐 **사이트 바로가기** </br></br>
+[![site](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=white)](http://220.68.27.123:2201/)
 
 ![Animation](https://drive.google.com/uc?id=1Kz8HM2qSak8u1XIuyqL_uRBhRshZTSrz)
 
