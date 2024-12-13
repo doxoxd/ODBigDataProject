@@ -155,10 +155,10 @@
 
 #### 하둡 데이터 업로드
 
-```http
+```bash
 hdfs dfs -mkdir -p /input
 hdfs dfs -put /data/* /input
-```
+
 
 
 
