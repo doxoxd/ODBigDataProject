@@ -19,7 +19,7 @@
 - 창업지역 정보 제공 자동화 파이프라인 구축
 
 ## 🔗 Links
-[![notion](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)]([https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)(https://katherineoelsner.com/](https://generated-volcano-24b.notion.site/OD-127953baa9f8805ebe47cc26304c0fae))
+[![notion](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)]([https://katherineoelsner.com/](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white))
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
 
 
