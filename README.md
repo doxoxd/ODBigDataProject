@@ -20,7 +20,6 @@
 
 ## 🔗 Links
 [![notion](https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white)](https://generated-volcano-24b.notion.site/OD-127953baa9f8805ebe47cc26304c0fae?pvs=4)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
 
 
                      
