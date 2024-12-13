@@ -7,8 +7,8 @@
 ![Animation](https://drive.google.com/uc?id=1Kz8HM2qSak8u1XIuyqL_uRBhRshZTSrz)
 
 
-🌐 사이트 바로가기 [![site](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=white)](http://220.68.27.123:2201/)
-
+[![site](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=white)](http://220.68.27.123:2201/)
+사이트 바로가기 
 
 ## 📖 프로젝트 소개
 - 생활이동 데이터를 활용한 빅데이터 분석 프로젝트
