@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결과</title>
+    <link rel="stylesheet" href="../static/main.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        #portfolio {
+            background-color: #f7f6f2;
+            height: auto;
+            min-height: 100vh;
+            overflow: auto;
+        }
+        /* 정보 섹션 스타일 */
+        .info-box, .result-box {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .result-box p {
+            text-align: center; /* 하위 p 태그만 중앙 정렬 */
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-left:50px;
+        }
+
+        li {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        /* 제목 스타일 */
+        h2, h3 {
+            color: #4b6587;
+            text-align: center;
+            margin-top : 40px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <section id="portfolio" class="two">
+    <div class="container">
+        <!-- 결과 제목 -->
+        <header>
+            <h2>결과</h2>
+        </header>
+
+        <!-- 입력된 정보 -->
+        <div class="info-box">
+            <h3>입력된 정보</h3>
+            <ul>
+                <li><strong>성별:</strong> {{ result.gender }}</li>
+                <li><strong>연령대:</strong> {{ result.age }}대</li>
+                <li><strong>목적:</strong> {{ result.purpose }}</li>
+            </ul>
+        </div>
+        <!-- 점수 결과 -->
+        <div class="result-box">
+            <h3>점수 결과</h3>
+            <p>
+                <strong>{{ result.resultmessage }}</strong>
+            </p>
+        </div>
+
+        <!--<p class="result-text">{{ result }}</p>-->
+        <a href="/download">
+        <button>지역 점수 예측 CSV 다운로드</button>
+        </a>
+
+        <!-- 그래프 섹션 -->
+        {% if graphs %}
+        <h2>생성된 그래프</h2>
+
+        <div class="row">
+            <div id="flex-container">
+                {% for graph in graphs %}
+                <div class="flex-item">
+                    <article class="item">
+                        <a href="#" class="image fit">
+                            <img src="{{ url_for('static', filename=graph.split('static/')[-1]) }}" 
+                                 alt="그래프 {{ loop.index }}"
+                                 class="zoomable-image" 
+                                 style="max-width: 100%; height: auto;">
+                        </a>
+                        <header>
+                            <h3>그래프 {{ loop.index }}</h3>
+                        </header>
+                    </article>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <p class="no-graph-message" style="margin-top: 20px;">생성된 그래프가 없습니다.</p>
+            {% endif %}
+        </div>
+        
+
+        <!-- 다시 입력 및 메인 화면으로 돌아가기 버튼 -->
+        <div class="button-group">
+            <a href="/" class="back-button">메인 화면으로 돌아가기</a>
+        </div>
+    </div>
+</section>
+</body>
+</html>

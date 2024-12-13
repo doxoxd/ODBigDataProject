@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>값 입력</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        select:focus, button:focus {
+            outline: none;
+            border-color: #4b6587;
+        }
+
+        button {
+            background-color: #4b6587;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5F8BFD;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>값 입력</h1>
+        <form action="/result2" method="post">
+            <!-- 타겟 연령층 -->
+            <div class="section">
+                <div class="section-title">타겟 연령층 입력</div>
+                <select id="age" name="age" required>
+                    <option value="" disabled selected>연령층 선택</option>
+                    <option value="10">10대</option>
+                    <option value="20">20대</option>
+                    <option value="30">30대</option>
+                    <option value="40">40대</option>
+                    <option value="50">50대</option>
+                    <option value="60">60대</option>
+                    <option value="70">70대</option>
+                    <option value="80">80대 이상</option>
+                </select>
+            </div>
+
+            <!-- 진출 분야 -->
+            <div class="section">
+                <div class="section-title">진출 분야 입력</div>
+                <select id="purpose" name="purpose" required>
+                    <option value="" disabled selected>분야 선택</option>
+                    <option value="업무">업무</option>
+                    <option value="학업">학업</option>
+                    <option value="쇼핑여가">쇼핑여가</option>
+                    <option value="귀가">귀가</option>
+                    <option value="여행">여행</option>
+                    <option value="기타">기타</option>
+                </select>
+            </div>
+
+            <!-- 타겟 성별 -->
+            <div class="section">
+                <div class="section-title">타겟 성별 입력</div>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>성별 선택</option>
+                    <option value="남성">남성</option>
+                    <option value="여성">여성</option>
+                </select>
+            </div>
+
+            <button type="submit">결과 보기</button>
+        </form>
+    </div>
+</body>
+</html>

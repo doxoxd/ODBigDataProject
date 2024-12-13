@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결과</title>
+    <link rel="stylesheet" href="../static/main.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        #portfolio {
+            background-color: #f7f6f2;
+            height: auto;
+            min-height: 100vh;
+            overflow: auto;
+        }
+        /* 정보 섹션 스타일 */
+        .info-box, .result-box, .comparison-box, .top-purpose-box {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .result-box p, .comparison-box p, .top-purpose-box p {
+            text-align: center; /* 하위 p 태그만 중앙 정렬 */
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-left:50px;
+        }
+
+        li {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        /* 제목 스타일 */
+        h2, h3 {
+            color: #4b6587;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section id="portfolio" class="two">
+        <div class="container">
+            <!-- 결과 제목 -->
+            <header>
+                <h2>결과</h2>
+            </header>
+                
+            <!-- 입력된 정보 -->
+            <div class="info-box">
+                <h3>입력된 정보</h3>
+                <ul>
+                    <li><strong>성별:</strong> {{ result.gendername }}</li>
+                    <li><strong>연령대:</strong> {{ result.resultage }}대</li>
+                    <li><strong>목적:</strong> {{ result.purpose }}</li>
+                    <li><strong>선택한 지역:</strong> {{ result.region}}</li>
+                </ul>
+            </div>
+            <!-- 점수 결과 -->
+            <div class="result-box">
+                <h3>점수 결과</h3>
+                <p>
+                    입력된 정보에 대한 지역 점수는 <strong>{{ result.new_prediction }}</strong>입니다.
+                    상위 <strong>{{ result.percentile }}%</strong>에 해당합니다.
+                </p>
+                <!--
+                <p>
+                    해당 지역에서는 <strong>{{ result.max_target.purpose }}</strong>하는 
+                    <strong>{{ result.max_target.age }}대</strong> 
+                    <strong>{{ result.max_target.gender }}</strong>성을 타겟으로 한 점수가 
+                    <strong>{{ result.max_target.score }}</strong>로 가장 높게 나타났습니다.
+                </p>-->
+            </div>
+
+            <!-- 평균 점수와 비교 -->
+            <div class="comparison-box">
+                <h3>평균 점수와 비교</h3>
+                <p>
+                    전체 평균 점수는 <strong>{{ result.average_score }}</strong>입니다.
+                    입력된 정보와 비교해 볼 때, 평균보다 
+                    <strong>{{ '높습니다' if result.new_prediction > result.average_score else '낮습니다' }}</strong>.
+                </p>
+            </div>
+
+            <!-- 목적별 최고 점수 지역 -->
+            <div class="top-purpose-box">
+                <h3>목적별 최고 점수 지역</h3>
+                <p>
+                    목적 '<strong>{{ result.purpose }}</strong>'와 관련하여 가장 높은 점수를 기록한 지역은
+                    <strong>{{ result.top_purpose.area_name }}</strong>이며, 점수는 
+                    <strong>{{ result.top_purpose.score }}</strong>입니다.
+                </p>
+            </div>
+            <!--<p class="result-text">{{ result }}</p>-->
+
+        <!-- 그래프 섹션 -->
+        {% if graphs %}
+        <h2>생성된 그래프</h2>
+
+        <div class="row">
+            <div id="flex-container">
+                {% for graph in graphs %}
+                <div class="flex-item">
+                    <article class="item">
+                        <a href="#" class="image fit">
+                            <img src="{{ url_for('static', filename=graph.split('static/')[-1]) }}" 
+                                 alt="그래프 {{ loop.index }}"
+                                 class="zoomable-image" 
+                                 style="max-width: 100%; height: auto;">
+                        </a>
+                        <header>
+                            <h3>그래프 {{ loop.index }}</h3>
+                        </header>
+                    </article>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <p class="no-graph-message" style="margin-top: 20px;">생성된 그래프가 없습니다.</p>
+            {% endif %}
+        </div>
+            <!-- 다시 입력 및 메인 화면으로 돌아가기 버튼 -->
+            <div class="button-group">
+                <a href="/" class="back-button">메인 화면으로 돌아가기</a>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
