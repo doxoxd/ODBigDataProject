@@ -19,7 +19,7 @@
 - 창업지역 정보 제공 자동화 파이프라인 구축
 
 ## 🔗 Links
-[![notion]([https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white](https://www.google.com/url?sa=i&url=https%3A%2F%2Ffineproxy.org%2Fko%2Fwebsites%2Fnotion-so%2F&psig=AOvVaw0rpqEGo5PLAskJlxYo2J2a&ust=1734200477992000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPiHrrOupYoDFQAAAAAdAAAAABAK))](https://generated-volcano-24b.notion.site/OD-127953baa9f8805ebe47cc26304c0fae?pvs=4)
+[![notion]([https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white)](https://generated-volcano-24b.notion.site/OD-127953baa9f8805ebe47cc26304c0fae?pvs=4)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
 
 
