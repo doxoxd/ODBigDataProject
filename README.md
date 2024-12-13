@@ -45,7 +45,7 @@
 | 서울시 상권분석서비스(영역-상권배후지) | 1,072 |https://data.seoul.go.kr/dataList/OA-22159/S/1/datasetView.do|
 | 서울시 상권분석서비스(길단위인구-상권배후지) | 23,979 |https://data.seoul.go.kr/dataList/OA-15582/S/1/datasetView.do|
 | 서울시 상권분석서비스(추정매출-상권배후지) | 220,846 |https://data.seoul.go.kr/dataList/OA-15582/S/1/datasetView.do|
-| 서울시 상권분석서비스(직장인구-상권배후지) | ? |https://data.seoul.go.kr/dataList/OA-15570/S/1/datasetView.do|
+| 서울시 상권분석서비스(직장인구-상권배후지) | 21,801 |https://data.seoul.go.kr/dataList/OA-15570/S/1/datasetView.do|
 
 
 
