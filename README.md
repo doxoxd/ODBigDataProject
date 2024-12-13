@@ -2,9 +2,6 @@
 # 🌟 OD 데이터를 통한 창업 지역 및 분야 추천
 🚀 **창업핑 빅데이터 분석 프로젝트**
 
-🌐 **사이트 바로가기**
-
-
 ![Animation](https://drive.google.com/uc?id=1Kz8HM2qSak8u1XIuyqL_uRBhRshZTSrz)
 
 
@@ -19,7 +16,7 @@
 
 - 창업지역 정보 제공 자동화 파이프라인 구축
 
-## 🔗 Links
+## 🔗 Links (Notion & Web)
 [![notion](https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white)](https://generated-volcano-24b.notion.site/OD-127953baa9f8805ebe47cc26304c0fae?pvs=4)
 [![site](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=white)](http://220.68.27.123:2201/)
 
